@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block pageTitle %} Admin Home Page{% endblock %}
+
+{% block body %}
+
+   {# {% set user = app.session.set('user',app.user.username) %}
+ #}
+
+    {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+        <p>Username: {{ app.user.username }}</p>
+            <a href="{{ path('logout') }}"> Click to Logout</a>
+    {% endif %}
+
+    <h1>Welcome to Admin Home Page</h1>
+    <p>
+        Welcome to the <strong>Secure</strong> admin home page
+    </p>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Password</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for user in users %}
+            <tr>
+                <td><a href="{{ path('user_show', { 'id': user.id }) }}">{{ user.id }}</a></td>
+                <td>{{ user.username }}</td>
+                <td>{{ user.password }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('user_show', { 'id': user.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('user_edit', { 'id': user.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('user_new') }}">Create a new user</a>
+        </li>
+        <li>
+            <a href="{{ path('homepage') }}">Homepage</a>
+        </li>
+    </ul>
+{% endblock %}

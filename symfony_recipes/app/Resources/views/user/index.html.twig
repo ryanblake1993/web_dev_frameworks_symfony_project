@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block pageTitle %} User HomePage {% endblock %}
+{% block body %}
+    <h1>Users list</h1>
+
+    <h2>Users list</h2>
+
+    {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+        <p>Username: {{ app.user.username }}</p>
+        <a href="{{ path('logout') }}"> Click to Logout</a>
+    {% endif %}
+    <br>
+    <li>
+        <a href="{{ path('tag_new') }}">Create New Tag</a>
+    </li>
+    <br>
+    <li>
+        <a href="{{ path('recipe_new') }}">Create New Recipe</a>
+    </li>
+    <br>
+    <li>
+        <a href="{{ path('recipe_index') }}">Recipes</a>
+    </li>
+    <br>
+    <li>
+        <a href="{{ path('tag_index') }}">Tags</a>
+    </li>
+    <br>
+    <br>
+    <li>
+        <a href="{{ path('recipe_collection_index') }}">Collection of Recipes</a>
+    </li>
+    <li>
+        <a href="{{ path('homepage') }}">Homepage</a>
+    </li>
+    <br>
+
+{% endblock %}

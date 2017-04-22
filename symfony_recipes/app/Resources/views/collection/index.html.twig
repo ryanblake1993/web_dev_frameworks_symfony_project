@@ -1,0 +1,113 @@
+{% extends 'base.html.twig' %}
+
+{% block pageTitle %}list of recipes{% endblock %}
+
+{% block body %}
+
+    {% set collection_recipes = app.session.get('collection') %}
+
+    {{ dump(app.session.get('collection')) }}
+
+    <h1>List of recipes in collection</h1>
+
+    {% if collection_recipes is null %}
+        <p>
+            you have no recipes in your collection
+        </p>
+    {% else %}
+
+        <tbody>
+        {% for recipe in collection_recipes %}
+            <tr>
+                <td>
+                    <ul>
+                        <li>
+                            id = {{ recipe.id }}
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>
+                            Tag = {{ recipe.tag.id }}
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>
+                            Author Name = {{ recipe.username.username }}
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>
+                            Title = {{ recipe.title }}
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>
+                            Summary = {{ recipe.summary }}
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>
+                            Steps = {{ recipe.steps }}
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>
+                            Ingredients = {{ recipe.ingredients }}
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <li>
+                        <a href="{{ path('recipe_collection_delete', { 'id': recipe.id }) }}">Remove From Collection</a>
+                    </li>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+        <hr>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <li>
+                         <a href="{{ path('user_index') }}">Back to User</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('recipe_index') }}">Recipe Index</a>
+                    <li>
+                        <a href="{{ path('recipe_collection_clear') }}">CLEAR all items in collection</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('homepage') }}">Homepage</a>
+                    </li>
+                </td>
+            <tr>
+        </table>
+    {% endif %}
+{% endblock %}

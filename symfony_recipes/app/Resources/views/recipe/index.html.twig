@@ -1,0 +1,113 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Recipes list</h1>
+    <tbody>
+    {% for recipe in recipes %}
+        <tr>
+            <td>
+                <ul>
+                    <li>
+                        id = {{ recipe.id }}
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>
+                        Tag = {{ recipe.tag.id }}
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>
+                        Author Name = {{ recipe.username.username }}
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>
+                        Title = {{ recipe.title }}
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>
+                        Summary = {{ recipe.summary }}
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>
+                        Steps = {{ recipe.steps }}
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>
+                        Ingredients = {{ recipe.ingredients }}
+                    </li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <ul>
+                    <li>
+                 {#Comments {{ comment.recipe_id }}#}
+                    </li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <li>
+                    <a href="{{ path('recipe_show', { 'id': recipe.id }) }}">Show Recipe Details</a>
+                </li>
+                {% if app.user.username == recipe.username.username %}
+                    <li>
+                        <a href="{{ path('recipe_edit', { 'id': recipe.id }) }}">Edit Recipe</a>
+                    </li>
+                {% elseif app.user %}
+                {% endif %}
+                <li>
+                    <a href="{{ path('recipe_collection_add', { 'id': recipe.id }) }}">Add to Collection</a>
+                </li>
+                <li>
+                    <a href="{{ path('comment_new', { 'id': recipe.id }) }}">Add Recipe Comment</a>
+                </li>
+            </td>
+        </tr>
+        <br>
+        <hr>
+        <br>
+    {% endfor %}
+    </tbody>
+    <ul>
+        <li>
+            <a href="{{ path('recipe_new') }}">Create a new recipe</a>
+        </li>
+        <li>
+            <a href="{{ path('homepage') }}">Homepage</a>
+        </li>
+    </ul>
+{% endblock %}

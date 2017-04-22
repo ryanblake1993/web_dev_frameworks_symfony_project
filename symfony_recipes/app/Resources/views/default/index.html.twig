@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block pageTitle %} Home Page {% endblock %}
+
+{% block body %}
+    <h1> Welcome to the Home Page</h1>
+    <ul>
+        <li>
+            <a href="{{ path('homepage') }}">Homepage</a>
+        </li>
+        <br>
+        <br>
+        <li>
+            <a href="{{ path('tag_index') }}">Tags</a>
+        </li>
+        <br>
+        <li>
+            <a href="{{ path('recipe_index') }}">Recipes</a>
+        </li>
+        <br>
+        <li>
+            <a href="{{ path('admin_index') }}">Admin Login</a>
+        </li>
+        <br>
+        <li>
+            <a href="{{ path('user_index') }}">User Login</a>
+        </li>
+        <br>
+        <li>
+            <a href="{{ path('comment_index') }}">comment</a>
+        </li>
+    </ul>
+{% endblock %}
