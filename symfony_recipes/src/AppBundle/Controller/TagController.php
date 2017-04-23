@@ -178,11 +178,11 @@ class TagController extends Controller
 
         if ($this->get('security.authorization_checker')->isGranted('IS_AUTHENTICATED_FULLY')) {
 
-            $tag->setVote(-5);
+            $tag->setVote($vote-5);
         }
         if (!$this->get('security.authorization_checker')->isGranted('IS_AUTHENTICATED_FULLY')) {
 
-            $tag->setVote(-1);
+            $tag->setVote($vote-1);
         }
 
         $em = $this->getDoctrine()->getManager();

@@ -123,7 +123,7 @@ class Recipe
     /**
      * @var date
      *
-     * @ORM\Column(name="date", type="date")
+     * @ORM\Column(name="date", type="string", length=255)
      */
     private $date;
 
@@ -132,7 +132,7 @@ class Recipe
     /**
      * @var AppBundle
      *
-     * @ORM\ManyToOne(targetEntity="Tag", inversedBy="recipes")
+     * @ORM\ManyToOne(targetEntity="Tag", inversedBy="recipe")
      * @ORM\JoinColumn(name="tag_id", referencedColumnName="id")
      */
     private $tag;

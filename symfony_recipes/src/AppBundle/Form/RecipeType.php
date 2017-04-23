@@ -29,7 +29,7 @@ class RecipeType extends AbstractType
 
       //  printf('***************'.$username);
 
-        $builder->add('title')->add('summary')->add('steps')->add('ingredients')->add('headshot');
+        $builder->add('title')->add('summary')->add('steps')->add('ingredients')->add('headshot')->add('date');
 
         $builder->add('username', EntityType::class,[
 
@@ -45,9 +45,9 @@ class RecipeType extends AbstractType
 
         ]);
 
-        $builder->add('date', DateType::class, array(
-            'widget'=>'single_text',
-        ));
+     //   $builder->add('date', DateType::class, array(
+      //      'widget'=>'single_text',
+      //  ));
     }
     
     /**

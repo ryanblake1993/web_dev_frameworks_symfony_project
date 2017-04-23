@@ -37,7 +37,7 @@ class Comment
     }
 
     /**
-     * @param mixed $username
+     * @param AppBundle $usernam
      */
     public function setUsername($username)
     {
@@ -45,7 +45,7 @@ class Comment
     }
 
     /**
-     * @ORM\ManyToOne(targetEntity="User", inversedBy="comments")
+     * @ORM\ManyToOne(targetEntity="User", inversedBy="username")
      * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
      */
     private $username;
@@ -59,27 +59,30 @@ class Comment
     private $dateTime;
 
     /**
-     * @return mixed
+     * Get recipe
+     *
+     * @return AppBundle
      */
     public function getRecipe()
     {
         return $this->recipe;
     }
-
     /**
-     * @param mixed $recipe
+     * @param AppBundle $recipe
      */
     public function setRecipe($recipe)
     {
         $this->recipe = $recipe;
     }
 
-
     /**
+     * @var AppBundle
+     *
      * @ORM\ManyToOne(targetEntity="Recipe", inversedBy="comments")
      * @ORM\JoinColumn(name="recipe_id", referencedColumnName="id")
      */
     private $recipe;
+
 
 
     /**

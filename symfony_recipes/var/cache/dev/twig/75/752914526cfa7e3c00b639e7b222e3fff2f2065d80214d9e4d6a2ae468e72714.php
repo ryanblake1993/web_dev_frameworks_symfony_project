@@ -21,29 +21,29 @@ class __TwigTemplate_e83c4c65f4285750e19d32c6fb4a640ac1eac477f7e80ccb0b39a1aea2e
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_ca5ac952b40b085aeea43e8447abebe5d9f26e41a4e289d4a417c25d15b645ed = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_ca5ac952b40b085aeea43e8447abebe5d9f26e41a4e289d4a417c25d15b645ed->enter($__internal_ca5ac952b40b085aeea43e8447abebe5d9f26e41a4e289d4a417c25d15b645ed_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "recipe/index.html.twig"));
+        $__internal_56db25bb15a13fb6dcb5d71139b6bda55d9f66bdf4bc6dac929e844789efe184 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_56db25bb15a13fb6dcb5d71139b6bda55d9f66bdf4bc6dac929e844789efe184->enter($__internal_56db25bb15a13fb6dcb5d71139b6bda55d9f66bdf4bc6dac929e844789efe184_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "recipe/index.html.twig"));
 
-        $__internal_ca9f494edb89874f1379d098c8e4ec3f23d79dbb9b7e0b6166d3c848e99a5966 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_ca9f494edb89874f1379d098c8e4ec3f23d79dbb9b7e0b6166d3c848e99a5966->enter($__internal_ca9f494edb89874f1379d098c8e4ec3f23d79dbb9b7e0b6166d3c848e99a5966_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "recipe/index.html.twig"));
+        $__internal_84dcb6381c34be467d84c5c183569ef3646b14723556e2f79424b593fe8e6527 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_84dcb6381c34be467d84c5c183569ef3646b14723556e2f79424b593fe8e6527->enter($__internal_84dcb6381c34be467d84c5c183569ef3646b14723556e2f79424b593fe8e6527_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "recipe/index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_ca5ac952b40b085aeea43e8447abebe5d9f26e41a4e289d4a417c25d15b645ed->leave($__internal_ca5ac952b40b085aeea43e8447abebe5d9f26e41a4e289d4a417c25d15b645ed_prof);
+        $__internal_56db25bb15a13fb6dcb5d71139b6bda55d9f66bdf4bc6dac929e844789efe184->leave($__internal_56db25bb15a13fb6dcb5d71139b6bda55d9f66bdf4bc6dac929e844789efe184_prof);
 
         
-        $__internal_ca9f494edb89874f1379d098c8e4ec3f23d79dbb9b7e0b6166d3c848e99a5966->leave($__internal_ca9f494edb89874f1379d098c8e4ec3f23d79dbb9b7e0b6166d3c848e99a5966_prof);
+        $__internal_84dcb6381c34be467d84c5c183569ef3646b14723556e2f79424b593fe8e6527->leave($__internal_84dcb6381c34be467d84c5c183569ef3646b14723556e2f79424b593fe8e6527_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_6b2f616d06bd64bd3720e5ac7a36ab4657d046996e7263f0b46f5ab47f9b96f9 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_6b2f616d06bd64bd3720e5ac7a36ab4657d046996e7263f0b46f5ab47f9b96f9->enter($__internal_6b2f616d06bd64bd3720e5ac7a36ab4657d046996e7263f0b46f5ab47f9b96f9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_a4e40b53a9817d4deaa9ae741c064f2f7c9a9a5aafa35b4f4bce7fc8ec8479d3 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_a4e40b53a9817d4deaa9ae741c064f2f7c9a9a5aafa35b4f4bce7fc8ec8479d3->enter($__internal_a4e40b53a9817d4deaa9ae741c064f2f7c9a9a5aafa35b4f4bce7fc8ec8479d3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_0af75d90c01ed02c982913d13abdd75e671b9cd0d88fd08a3db14cfd373a2859 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_0af75d90c01ed02c982913d13abdd75e671b9cd0d88fd08a3db14cfd373a2859->enter($__internal_0af75d90c01ed02c982913d13abdd75e671b9cd0d88fd08a3db14cfd373a2859_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_bb45515dc30af00fce0084e2d90ca83e48b077a4e94d4873435ced35f073bb48 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_bb45515dc30af00fce0084e2d90ca83e48b077a4e94d4873435ced35f073bb48->enter($__internal_bb45515dc30af00fce0084e2d90ca83e48b077a4e94d4873435ced35f073bb48_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "    <h1>Recipes list</h1>
@@ -72,7 +72,7 @@ class __TwigTemplate_e83c4c65f4285750e19d32c6fb4a640ac1eac477f7e80ccb0b39a1aea2e
                     <li>
                         Tag = ";
             // line 20
-            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["recipe"], "tag", array()), "id", array()), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["recipe"], "tag", array()), "name", array()), "html", null, true);
             echo "
                     </li>
                 </ul>
@@ -160,7 +160,7 @@ class __TwigTemplate_e83c4c65f4285750e19d32c6fb4a640ac1eac477f7e80ccb0b39a1aea2e
                 </li>
                 ";
             // line 86
-            if (($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()), "username", array()) == $this->getAttribute($this->getAttribute($context["recipe"], "username", array()), "username", array()))) {
+            if (($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()) == $this->getAttribute($this->getAttribute($context["recipe"], "username", array()), "username", array()))) {
                 // line 87
                 echo "                    <li>
                         <a href=\"";
@@ -169,21 +169,22 @@ class __TwigTemplate_e83c4c65f4285750e19d32c6fb4a640ac1eac477f7e80ccb0b39a1aea2e
                 echo "\">Edit Recipe</a>
                     </li>
                 ";
-            } elseif ($this->getAttribute(            // line 90
-(isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array())) {
+            } else {
                 // line 91
+                echo "                    ";
+                // line 92
                 echo "                ";
             }
-            // line 92
+            // line 93
             echo "                <li>
                     <a href=\"";
-            // line 93
+            // line 94
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("recipe_collection_add", array("id" => $this->getAttribute($context["recipe"], "id", array()))), "html", null, true);
             echo "\">Add to Collection</a>
                 </li>
                 <li>
                     <a href=\"";
-            // line 96
+            // line 97
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("comment_new", array("id" => $this->getAttribute($context["recipe"], "id", array()))), "html", null, true);
             echo "\">Add Recipe Comment</a>
                 </li>
@@ -197,28 +198,28 @@ class __TwigTemplate_e83c4c65f4285750e19d32c6fb4a640ac1eac477f7e80ccb0b39a1aea2e
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['recipe'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 104
+        // line 105
         echo "    </tbody>
     <ul>
         <li>
             <a href=\"";
-        // line 107
+        // line 108
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("recipe_new");
         echo "\">Create a new recipe</a>
         </li>
         <li>
             <a href=\"";
-        // line 110
+        // line 111
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("homepage");
         echo "\">Homepage</a>
         </li>
     </ul>
 ";
         
-        $__internal_0af75d90c01ed02c982913d13abdd75e671b9cd0d88fd08a3db14cfd373a2859->leave($__internal_0af75d90c01ed02c982913d13abdd75e671b9cd0d88fd08a3db14cfd373a2859_prof);
+        $__internal_bb45515dc30af00fce0084e2d90ca83e48b077a4e94d4873435ced35f073bb48->leave($__internal_bb45515dc30af00fce0084e2d90ca83e48b077a4e94d4873435ced35f073bb48_prof);
 
         
-        $__internal_6b2f616d06bd64bd3720e5ac7a36ab4657d046996e7263f0b46f5ab47f9b96f9->leave($__internal_6b2f616d06bd64bd3720e5ac7a36ab4657d046996e7263f0b46f5ab47f9b96f9_prof);
+        $__internal_a4e40b53a9817d4deaa9ae741c064f2f7c9a9a5aafa35b4f4bce7fc8ec8479d3->leave($__internal_a4e40b53a9817d4deaa9ae741c064f2f7c9a9a5aafa35b4f4bce7fc8ec8479d3_prof);
 
     }
 
@@ -234,7 +235,7 @@ class __TwigTemplate_e83c4c65f4285750e19d32c6fb4a640ac1eac477f7e80ccb0b39a1aea2e
 
     public function getDebugInfo()
     {
-        return array (  212 => 110,  206 => 107,  201 => 104,  187 => 96,  181 => 93,  178 => 92,  175 => 91,  173 => 90,  168 => 88,  165 => 87,  163 => 86,  158 => 84,  148 => 76,  135 => 65,  123 => 56,  111 => 47,  99 => 38,  87 => 29,  75 => 20,  63 => 11,  57 => 7,  53 => 6,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  213 => 111,  207 => 108,  202 => 105,  188 => 97,  182 => 94,  179 => 93,  176 => 92,  174 => 91,  168 => 88,  165 => 87,  163 => 86,  158 => 84,  148 => 76,  135 => 65,  123 => 56,  111 => 47,  99 => 38,  87 => 29,  75 => 20,  63 => 11,  57 => 7,  53 => 6,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -266,7 +267,7 @@ class __TwigTemplate_e83c4c65f4285750e19d32c6fb4a640ac1eac477f7e80ccb0b39a1aea2e
             <td>
                 <ul>
                     <li>
-                        Tag = {{ recipe.tag.id }}
+                        Tag = {{ recipe.tag.name }}
                     </li>
                 </ul>
             </td>
@@ -332,11 +333,12 @@ class __TwigTemplate_e83c4c65f4285750e19d32c6fb4a640ac1eac477f7e80ccb0b39a1aea2e
                 <li>
                     <a href=\"{{ path('recipe_show', { 'id': recipe.id }) }}\">Show Recipe Details</a>
                 </li>
-                {% if app.user.username == recipe.username.username %}
+                {% if app.user  == recipe.username.username %}
                     <li>
                         <a href=\"{{ path('recipe_edit', { 'id': recipe.id }) }}\">Edit Recipe</a>
                     </li>
-                {% elseif app.user %}
+                {% else %}
+                    {# Do Nothing #}
                 {% endif %}
                 <li>
                     <a href=\"{{ path('recipe_collection_add', { 'id': recipe.id }) }}\">Add to Collection</a>

@@ -23,7 +23,9 @@
                         <li>
                             <a href="{{ path('tag_show', { 'id': tag.id }) }}">show</a>
                         </li>
-                        {% if app.user.username  == tag.username.username %}
+                        {% if app.user %}
+                            {# Do Nothing #}
+                        {% elseif app.user  == tag.username.username %}
                             <li>
                                 <a href="{{ path('tag_edit', { 'id': tag.id }) }}">edit</a>
                             </li>

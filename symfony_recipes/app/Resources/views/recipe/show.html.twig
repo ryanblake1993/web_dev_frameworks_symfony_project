@@ -26,8 +26,9 @@
                 <td>{{ recipe.ingredients }}</td>
             </tr>
             <tr>
-                <th>Votes</th>
-                <td>{{ recipe.votes }}</td>
+                <th>Image</th>
+                <td>{{ recipe.headshot }}</td>
+                <img src="{{ recipe.headshot }}" alt="{{ recipe.headshot }}" />
             </tr>
         </tbody>
     </table>

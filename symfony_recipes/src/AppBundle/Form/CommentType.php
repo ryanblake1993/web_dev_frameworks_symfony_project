@@ -3,7 +3,7 @@
 namespace AppBundle\Form;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
-use Symfony\Bridge\Doctrine\Form\Type\RecipeType;
+
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -34,7 +34,7 @@ class CommentType extends AbstractType
         $builder->add('recipe', EntityType::class,[
 
             'class' =>'AppBundle:Recipe',
-            'choice_label' =>'recipe',
+            'choice_label' =>'comments',
         ]);
 
             $builder->add('username', EntityType::class,[
